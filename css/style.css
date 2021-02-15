@@ -6,7 +6,7 @@ head ul li {
 
 
 body {
-        background-image: url("/imgs/background.jpg"); 
+        background-image: url("https://github.com/tamaraalbilleh/guessing-game/blob/main/imgs/background.jpg?raw=true"); 
         width: 900px;
         margin: auto;
         text-align: center;
