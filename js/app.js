@@ -138,13 +138,13 @@ alert (' your current score is '+ score +' out of 7');
 let answer = ['zaid' ,'saif'];
 let brothers = prompt ('I have two brothers , can you guess one of their names? hint : choose from these names(mohammad , ahmad, zaid, abdallah,saif,omar) you have 6 attempts');
 brothers.toLowerCase();
-if (brothers !== answer){
+if (brothers === answer ){
+  alert (' correct He is one of my brothers , good job '+ userName);
+  score++;
+}else {
   for (let tryNum = 0; tryNum < 5;tryNum++){
     brothers = prompt ('incorrect,try again to guess one of my brothers names , choose from these names(mohammad , ahmad, zaid, abdallah,saif,omar)');
   }
-}else {
-  alert (' correct He is one of my brothers , good job '+ userName);
-  score++;
 }
 alert(' my brothers names are Zaid and Saif');
 
@@ -156,3 +156,7 @@ if (score < 4){
   alert ('great , you WON , you did a great job '+ userName);
 }
 alert (' Thank you for playing along '+ userName +' This was fun ^_^');
+
+
+
+
