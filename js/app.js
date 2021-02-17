@@ -131,22 +131,47 @@ while (trials){
     }
   }
 }
-alert (' my favorite number is the number 6 because its my birthday month')
+alert (' my favorite number is the number 6 because its my birthday month');
 alert (' your current score is '+ score +' out of 7');
 
 //seventh question //
-let answer = ['zaid' ,'saif'];
+let answer = ['zaid', 'saif'];
 let brothers = prompt ('I have two brothers , can you guess one of their names? hint : choose from these names(mohammad , ahmad, zaid, abdallah,saif,omar) you have 6 attempts');
 brothers.toLowerCase();
-if (brothers === answer ){
-  alert (' correct He is one of my brothers , good job '+ userName);
-  score++;
-}else {
-  for (let tryNum = 0; tryNum < 5;tryNum++){
-    brothers = prompt ('incorrect,try again to guess one of my brothers names , choose from these names(mohammad , ahmad, zaid, abdallah,saif,omar)');
-  }
+let tryBrothers = 5;
+while (tryBrothers){
+  if (brothers!== answer ){
+    alert ('wrong answer');
+    brothers = prompt ('try again, guess one of their names? hint : choose from these names(mohammad , ahmad, zaid, abdallah,saif,omar)');
+    tryBrothers--;
+  }else if (brothers === answer) {
+    alert ('correct answer , good job '+ userName);
+    tryBrothers = 0;
+    score++;}
 }
-alert(' my brothers names are Zaid and Saif');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+alert (' my two brothers are Zaid and Saif ,');
+
+
+
+
 
 // final score //
 alert (' your current score is '+ score +' out of 7');
